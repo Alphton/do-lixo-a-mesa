@@ -41,19 +41,20 @@ header {
 
 /* --- AJUSTE DE RESPONSIVIDADE PARA CELULAR (SM) --- */
 @media (max-width: 576px) {
-    /* Diminui e reposiciona os logos no celular para que caibam e apareçam */
+    /* FORÇA MÁXIMA PARA GARANTIR VISIBILIDADE E TAMANHO NO MOBILE */
     .logo-header, .logo-if {
-        width: 45px; /* Tamanho ajustado para visibilidade */
-        height: auto;
-        top: 10px; /* Mais perto do topo */
-        margin: 0 !important; /* Remove margens que podem estar causando conflito */
+        display: block !important; /* GARANTE QUE ELA APAREÇA */
+        width: 45px !important; /* Força o tamanho pequeno */
+        height: auto !important;
+        top: 10px !important; /* Mais perto do topo */
+        margin: 0 !important; /* Remove margens do Bootstrap */
     }
 
     .logo-header {
-        left: 5px; /* Mais perto da borda esquerda */
+        left: 5px !important; 
     }
     .logo-if {
-        right: 5px; /* Mais perto da borda direita */
+        right: 5px !important; 
     }
     
     /* Aumenta o padding vertical no cabeçalho para dar "respiro" ao texto no mobile */
