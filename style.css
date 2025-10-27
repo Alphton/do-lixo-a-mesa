@@ -41,12 +41,7 @@ header {
 
 /* --- AJUSTE DE RESPONSIVIDADE PARA CELULAR (SM) --- */
 @media (max-width: 576px) {
-    /* 1. ESCONDE OS LOGOS NO MOBILE (USANDO !IMPORTANT PARA GARANTIR) */
-    .logo-header, .logo-if {
-        display: none !important;
-    }
-    
-    /* 2. Aumenta o padding vertical no cabeçalho para dar "respiro" ao texto */
+    /* Aumenta o padding vertical no cabeçalho para dar "respiro" ao texto no mobile */
     header {
         padding: 40px 20px;
     }
