@@ -18,6 +18,7 @@ header {
     background-color: #00563f; 
     background: linear-gradient(135deg, #00563f 80%, #3cb371 120%); 
     color: white;
+    /* Padding original para telas grandes */
     padding: 30px 20px;
     text-align: center;
     min-height: 150px; 
@@ -25,7 +26,7 @@ header {
 
 /* LOGOS */
 .logo-header, .logo-if {
-    width: 80px; /* Logos ajustados */
+    width: 80px;
     height: auto;
     top: 20px; 
     z-index: 10; 
@@ -38,6 +39,20 @@ header {
 .logo-if {
     right: 20px;
 }
+
+/* --- AJUSTE DE RESPONSIVIDADE PARA CELULAR (SM) --- */
+@media (max-width: 576px) {
+    /* 1. Esconde os logos em telas pequenas para liberar espaço no cabeçalho */
+    .logo-header, .logo-if {
+        display: none;
+    }
+    
+    /* 2. Aumenta o padding vertical no cabeçalho para dar "respiro" ao texto */
+    header {
+        padding: 40px 20px; /* Aumentado o padding superior e inferior */
+    }
+}
+/* ------------------------------------------------ */
 
 /* --- NAVBAR MANUAL --- */
 
@@ -64,7 +79,7 @@ header {
     color: white;
     font-weight: 700;
     font-size: 0.75rem; 
-    line-height: 0.9; /* Chave para manter a navbar fina com o texto em 3 linhas */
+    line-height: 0.9;
     text-decoration: none;
     padding: 0.2rem 0; 
     display: flex;
