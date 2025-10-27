@@ -41,18 +41,19 @@ header {
 
 /* --- AJUSTE DE RESPONSIVIDADE PARA CELULAR (SM) --- */
 @media (max-width: 576px) {
-    /* Diminui os logos para 40px no celular */
+    /* Diminui e reposiciona os logos no celular para que caibam e apareçam */
     .logo-header, .logo-if {
-        width: 40px; 
-        top: 15px; 
+        width: 45px; /* Tamanho ajustado para visibilidade */
+        height: auto;
+        top: 10px; /* Mais perto do topo */
+        margin: 0 !important; /* Remove margens que podem estar causando conflito */
     }
 
-    /* Reposiciona um pouco para telas muito pequenas */
     .logo-header {
-        left: 10px;
+        left: 5px; /* Mais perto da borda esquerda */
     }
     .logo-if {
-        right: 10px;
+        right: 5px; /* Mais perto da borda direita */
     }
     
     /* Aumenta o padding vertical no cabeçalho para dar "respiro" ao texto no mobile */
@@ -217,10 +218,10 @@ section h2 {
     margin-bottom: 0.5rem; 
 }
 
-/* NOVO: Garante o espaçamento da lista de ingredientes */
+/* Garante o espaçamento da lista de ingredientes */
 .receita ul {
-    list-style-type: disc; /* Garante que o bullet está ativo */
-    margin-left: 15px; /* Adiciona a margem à esquerda */
+    list-style-type: disc; 
+    margin-left: 15px; 
     padding-left: 0;
 }
 
@@ -228,7 +229,6 @@ section h2 {
     margin-bottom: 5px;
     line-height: 1.3;
 }
-/* FIM NOVO */
 
 
 /* FOOTER */
